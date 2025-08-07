@@ -1,0 +1,45 @@
+.intro {
+   height: 100vh;
+   position: relative;
+   background-image: url("/src/img/intro-icon.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   // display: flex;
+   // justify-content: center;
+   // align-items: center;
+
+   &__title {
+      font-size: 38px;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      right: 0;
+      text-align: center;
+      transform: translateY(-50%);
+   }
+
+   &__btn {
+      position: absolute;
+      font-size: 16px;
+      width: 42px;
+      height: 42px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+
+   &__icon {
+      fill: #fff;
+      display: flex;
+      width: 42px;
+      height: 42px;
+      justify-content: center;
+      align-items: center;
+      padding-right: 3px;
+   }
+
+}

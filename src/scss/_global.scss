@@ -1,0 +1,86 @@
+body {
+  font-family: "Montserrat";
+  color: $main-text-color;
+  transition: background 0.2s ease, color 0.2s ease;
+  font: #{$base-fz}/#{$base-lh} #{$base-ff};
+
+  @include viewport-md {}
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 375px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {}
+}
+
+.title {
+  font-size: 25px;
+  text-align: center;
+}
+
+.bg-gradient-2 {
+  position: relative;
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+  color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.bg-gradient {
+  position: relative;
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+  color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-top: -150px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: -275px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-top: -180px;
+  }
+
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    height: 12px;
+    right: 20px;
+    left: 20px;
+    background: #CACADB;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    z-index: 2;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -26px;
+    height: 24px;
+    right: 40px;
+    left: 40px;
+    background: #E7E7F2;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    z-index: 1;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-clip: text;
+  color: transparent;
+}

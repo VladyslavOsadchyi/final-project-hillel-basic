@@ -1,0 +1,151 @@
+.footer {
+  background: #F5F5FA;
+
+  @media screen and (min-width: 768px) {}
+
+  &__list {
+    padding: 10px 0;
+    position: relative;
+
+  }
+
+  &__address {
+    position: relative;
+    padding: 8px 0;
+    text-align: center;
+    line-height: 2;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+
+      >li+li {
+        position: relative;
+
+        ::before {
+          content: "";
+          position: absolute;
+          left: -13px;
+          top: 14px;
+          width: 6px;
+          height: 6px;
+          background-color: rgba(179, 179, 186, 1);
+          border-radius: 50%;
+          margin: 0 10px;
+          color: #b3b3ba;
+        }
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      justify-content: start;
+    }
+
+    li {
+
+      padding: 0 12px;
+
+      address {
+        color: $main-color;
+      }
+
+      p {
+        color: $active-color;
+        font-weight: bold;
+      }
+
+      p:hover {
+        color: $color-accent;
+      }
+    }
+  }
+
+  &__contacts {
+    text-align: center;
+    line-height: 2;
+    padding: 12px 0;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+
+      >li+li {
+        position: relative;
+
+        ::before {
+          content: "";
+          position: absolute;
+          left: -13px;
+          top: 14px;
+          width: 6px;
+          height: 6px;
+          background-color: rgba(179, 179, 186, 1);
+          border-radius: 50%;
+          margin: 0 10px;
+          color: #b3b3ba;
+        }
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      justify-content: start;
+    }
+
+    li {
+      padding: 0 12px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .facebook-icon {
+      fill: $active-color;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .facebook-icon:hover {
+      fill: $color-accent;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+
+  .contacts__tel {
+    color: $second-color;
+    font-weight: bold;
+  }
+
+  .contacts__emeil {
+    color: $active-color;
+    font-weight: bold;
+  }
+
+  .contacts__emeil:hover {
+    color: $color-accent;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    color: rgba(179, 179, 186, 1);
+    padding: 12px 0;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      color: rgba(179, 179, 186, 1);
+    }
+
+    @media screen and (min-width: 1024px) {
+      padding: 5px 12px;
+      position: absolute;
+      right: 0;
+      top: 19px;
+      color: rgba(179, 179, 186, 1);
+    }
+  }
+}
